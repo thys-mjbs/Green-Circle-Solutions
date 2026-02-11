@@ -389,6 +389,11 @@
   }
 }
 
+.hero-banner {
+  max-width: none;
+  margin: 0;
+}
+
 /* =========================
    Intro Split Layout
    ========================= */
@@ -448,4 +453,10 @@
     min-height: 200px;
   }
 }
-  
+
+@media (max-width: 768px) {
+  .hero-banner-img {
+    max-height: 60vh;
+    object-fit: contain;
+  }
+}
