@@ -741,3 +741,53 @@
       grid-template-columns: 1.2fr 0.8fr;
     }
   }
+
+  /* =========================
+   Feature Sections
+   ========================= */
+
+.feature {
+  display: grid;
+  gap: 24px;
+  align-items: center;
+  grid-template-columns: 1fr;
+}
+
+.feature-visual {
+  min-height: 240px;
+  border-radius: 16px;
+  background: linear-gradient(135deg, #e3f4e8, #e6f1fb);
+}
+
+.feature-text h2 {
+  margin-bottom: 12px;
+}
+
+@media (min-width: 860px) {
+
+  .feature {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .feature.alt {
+    direction: rtl;
+  }
+
+  .feature.alt .feature-text {
+    direction: ltr;
+  }
+
+}
+
+/* =========================
+   Final CTA
+   ========================= */
+
+.final-cta {
+  text-align: center;
+}
+
+.final-cta p {
+  max-width: 700px;
+  margin: 0 auto 20px auto;
+}
