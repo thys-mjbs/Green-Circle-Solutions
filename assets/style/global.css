@@ -391,3 +391,43 @@
     min-height: 520px;
   }
 }
+
+/* =========================
+   Intro Split Layout
+   ========================= */
+
+   .intro-split {
+    display: grid;
+    gap: 24px;
+    align-items: start;
+  }
+  
+  .intro-split.right {
+    grid-template-columns: 1.2fr 0.8fr;
+  }
+  
+  .intro-split.left {
+    grid-template-columns: 0.8fr 1.2fr;
+  }
+  
+  .intro-image {
+    min-height: 220px;
+    border-radius: 14px;
+    background-image: url("/Green-Circle-Solutions/assets/style/hero-structure.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  /* Mobile collapse */
+  @media (max-width: 768px) {
+    .intro-split,
+    .intro-split.left,
+    .intro-split.right {
+      grid-template-columns: 1fr;
+    }
+  
+    .intro-image {
+      min-height: 200px;
+    }
+  }
