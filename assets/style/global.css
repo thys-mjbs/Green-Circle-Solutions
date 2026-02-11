@@ -73,7 +73,7 @@
   }
   
   .site-nav a.active {
-    opacity: 0.85;
+    opacity: 0.8;
   }
   
   /* =========================
@@ -85,10 +85,6 @@
     padding: 28px 16px;
   }
   
-  .site-main--wide {
-    max-width: 1200px;
-  }
-  
   .page-content {
     padding: 28px 16px 48px 16px;
   }
@@ -98,11 +94,11 @@
      ========================= */
   .site-main > section,
   .page-content > section {
-    background: #fefefe;
+    background: #eef6ea;
     border-radius: 18px;
     padding: 28px;
     margin-bottom: 22px;
-    border: 1px solid rgba(41,146,193,0.45);
+    border: 1px solid #0f172a;
     box-shadow: 0 14px 28px rgba(6,98,166,0.12);
   }
   
@@ -112,7 +108,7 @@
   }
   
   /* =========================
-     Hero Layout (LEGACY)
+     Hero Layout
      ========================= */
   .hero {
     display: grid;
@@ -123,12 +119,12 @@
   .hero-content h1 {
     font-size: 36px;
     margin-top: 0;
-    color: #0662a6;
+    color: #0f172a;
   }
   
   .hero-content p {
     font-size: 18px;
-    color: #0f172a;
+    color: #2992c1;
   }
   
   .hero-actions {
@@ -166,7 +162,7 @@
   }
   
   .cta-button:hover {
-    opacity: 0.88;
+    opacity: 0.85;
   }
   
   /* =========================
@@ -178,12 +174,12 @@
   
   h2 {
     font-size: 24px;
-    color: #0662a6;
+    color: #0f172a;
   }
   
   h3 {
     font-size: 18px;
-    color: #0662a6;
+    color: #0f172a;
   }
   
   /* =========================
@@ -207,7 +203,7 @@
   }
   
   /* =========================
-     Responsive (LEGACY)
+     Responsive
      ========================= */
   @media (min-width: 860px) {
     .hero {
@@ -259,6 +255,7 @@
     display: block;
   }
   
+  /* Mobile behaviour */
   @media (max-width: 768px) {
   
     .site-header-inner {
@@ -341,6 +338,10 @@
     line-height: 1.4;
   }
   
+  /* =========================
+     Footer Mobile Collapse
+     ========================= */
+  
   @media (max-width: 768px) {
     .footer-grid {
       grid-template-columns: 1fr;
@@ -364,430 +365,3 @@
       order: 3;
     }
   }
-  
-  /* =========================
-     NEW: EXPRESSIVE HOMEPAGE SYSTEM
-     ========================= */
-  
-  .kicker {
-    display: inline-block;
-    font-weight: 700;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    font-size: 12px;
-    color: #2992c1;
-    margin: 0 0 10px 0;
-  }
-  
-  .hero2 {
-    padding: 0;
-    overflow: hidden;
-    display: grid;
-    grid-template-columns: 1fr;
-  }
-  
-  .hero2-left {
-    padding: 28px;
-  }
-  
-  .hero2-title {
-    font-size: 44px;
-    line-height: 1.1;
-    margin: 0 0 14px 0;
-    color: #0f172a;
-  }
-  
-  .hero2-lead {
-    font-size: 18px;
-    color: #0f172a;
-    margin: 0 0 18px 0;
-  }
-  
-  .trust-row {
-    margin-top: 18px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-  }
-  
-  .trust-chip {
-    border: 1px solid rgba(41,146,193,0.55);
-    background: rgba(119,183,55,0.10);
-    color: #0f172a;
-    padding: 8px 12px;
-    border-radius: 999px;
-    font-size: 13px;
-    font-weight: 600;
-  }
-  
-  .hero2-right {
-    padding: 0;
-  }
-  
-  .hero2-media {
-    position: relative;
-    height: 100%;
-    min-height: 320px;
-  }
-  
-  .hero2-media img {
-    width: 100%;
-    height: 100%;
-    display: block;
-    object-fit: cover;
-  }
-  
-  .hero2-overlay {
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(180deg, rgba(6,98,166,0.00), rgba(6,98,166,0.30));
-    display: flex;
-    align-items: flex-end;
-    padding: 18px;
-  }
-  
-  .overlay-card {
-    width: min(360px, 100%);
-    background: rgba(254,254,254,0.90);
-    border: 1px solid rgba(41,146,193,0.45);
-    border-radius: 14px;
-    padding: 14px;
-    box-shadow: 0 14px 28px rgba(6,98,166,0.14);
-  }
-  
-  .overlay-title {
-    margin: 0 0 6px 0;
-    font-weight: 800;
-    color: #0662a6;
-  }
-  
-  .overlay-text {
-    margin: 0;
-    color: #0f172a;
-    font-size: 13px;
-  }
-  
-  .band {
-    padding: 0;
-  }
-  
-  .band-inner {
-    padding: 28px;
-  }
-  
-  .band--soft {
-    background: rgba(119,183,55,0.12);
-    border: 1px solid rgba(119,183,55,0.20);
-  }
-  
-  .band-title {
-    margin: 0 0 12px 0;
-    color: #0f172a;
-    font-weight: 700;
-  }
-  
-  .logo-strip {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-  }
-  
-  .logo-pill {
-    border: 1px solid rgba(6,98,166,0.25);
-    background: rgba(254,254,254,0.75);
-    border-radius: 999px;
-    padding: 10px 12px;
-    font-size: 13px;
-    font-weight: 700;
-    color: #0662a6;
-  }
-  
-  .grid2 {
-    padding: 28px;
-  }
-  
-  .grid2-head p {
-    margin-top: 8px;
-    color: #0f172a;
-  }
-  
-  .card-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 14px;
-    margin-top: 16px;
-  }
-  
-  .card2 {
-    border-radius: 16px;
-    border: 1px solid rgba(41,146,193,0.45);
-    background: rgba(254,254,254,0.95);
-    padding: 18px;
-    box-shadow: 0 14px 28px rgba(6,98,166,0.10);
-  }
-  
-  .card2 h3 {
-    margin: 0 0 8px 0;
-    color: #0662a6;
-  }
-  
-  .card2 p {
-    margin: 0;
-    color: #0f172a;
-  }
-  
-  .split2 {
-    padding: 0;
-    overflow: hidden;
-    display: grid;
-    grid-template-columns: 1fr;
-  }
-  
-  .split2-media img {
-    width: 100%;
-    height: 100%;
-    display: block;
-    object-fit: cover;
-    min-height: 260px;
-  }
-  
-  .split2-content {
-    padding: 28px;
-  }
-  
-  .checklist {
-    margin: 16px 0 0 0;
-    padding-left: 18px;
-  }
-  
-  .gallery2 {
-    padding: 28px;
-  }
-  
-  .gallery2-head p {
-    margin-top: 8px;
-    color: #0f172a;
-  }
-  
-  .gallery-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 14px;
-    margin-top: 16px;
-  }
-  
-  .gallery-tile {
-    margin: 0;
-    overflow: hidden;
-    border-radius: 16px;
-    border: 1px solid rgba(41,146,193,0.45);
-    background: #fefefe;
-    box-shadow: 0 14px 28px rgba(6,98,166,0.10);
-  }
-  
-  .gallery-tile img {
-    width: 100%;
-    height: 220px;
-    display: block;
-    object-fit: cover;
-  }
-  
-  .gallery-tile figcaption {
-    padding: 12px 14px;
-    color: #0f172a;
-    font-weight: 600;
-    font-size: 13px;
-  }
-  
-  .steps2 {
-    padding: 28px;
-  }
-  
-  .steps-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 14px;
-    margin-top: 16px;
-  }
-  
-  .step-card {
-    border-radius: 16px;
-    border: 1px solid rgba(119,183,55,0.30);
-    background: rgba(119,183,55,0.10);
-    padding: 18px;
-  }
-  
-  .step-num {
-    font-weight: 900;
-    color: #469620;
-    letter-spacing: 0.08em;
-    margin-bottom: 10px;
-  }
-  
-  .step-card h3 {
-    margin: 0 0 8px 0;
-    color: #0662a6;
-  }
-  
-  .step-card p {
-    margin: 0;
-    color: #0f172a;
-  }
-  
-  .two-col {
-    padding: 28px;
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 18px;
-  }
-  
-  .pill-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 14px;
-  }
-  
-  .pill-card {
-    border-radius: 16px;
-    border: 1px solid rgba(41,146,193,0.45);
-    background: rgba(254,254,254,0.95);
-    padding: 18px;
-    box-shadow: 0 14px 28px rgba(6,98,166,0.10);
-  }
-  
-  .pill-card h3 {
-    margin: 0 0 8px 0;
-    color: #0662a6;
-  }
-  
-  .pill-card p {
-    margin: 0;
-    color: #0f172a;
-  }
-  
-  .cta-band {
-    padding: 0;
-    background: linear-gradient(135deg, rgba(6,98,166,0.12), rgba(119,183,55,0.16));
-    border: 1px solid rgba(41,146,193,0.35);
-  }
-  
-  .cta-band-inner {
-    padding: 28px;
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 14px;
-    align-items: center;
-  }
-  
-  .cta-band-actions .cta-button.secondary {
-    background: rgba(254,254,254,0.90);
-  }
-  
-  .reveal {
-    opacity: 0;
-    transform: translateY(10px);
-    transition: opacity 500ms ease, transform 500ms ease;
-  }
-  
-  .reveal.is-visible {
-    opacity: 1;
-    transform: translateY(0);
-  }
-  
-  @media (min-width: 860px) {
-    .hero2 {
-      grid-template-columns: 1.1fr 0.9fr;
-      align-items: stretch;
-    }
-  
-    .hero2-left {
-      padding: 34px;
-    }
-  
-    .hero2-title {
-      font-size: 52px;
-    }
-  
-    .card-grid {
-      grid-template-columns: 1fr 1fr;
-    }
-  
-    .split2 {
-      grid-template-columns: 0.95fr 1.05fr;
-    }
-  
-    .split2-media img {
-      min-height: 420px;
-    }
-  
-    .gallery-grid {
-      grid-template-columns: 1fr 1fr;
-    }
-  
-    .steps-grid {
-      grid-template-columns: 1fr 1fr;
-    }
-  
-    .two-col {
-      grid-template-columns: 0.9fr 1.1fr;
-      align-items: start;
-    }
-  
-    .pill-grid {
-      grid-template-columns: 1fr 1fr;
-    }
-  
-    .cta-band-inner {
-      grid-template-columns: 1.2fr 0.8fr;
-    }
-  }
-
-  /* =========================
-   Feature Sections
-   ========================= */
-
-.feature {
-  display: grid;
-  gap: 24px;
-  align-items: center;
-  grid-template-columns: 1fr;
-}
-
-.feature-visual {
-  min-height: 240px;
-  border-radius: 16px;
-  background: linear-gradient(135deg, #e3f4e8, #e6f1fb);
-}
-
-.feature-text h2 {
-  margin-bottom: 12px;
-}
-
-@media (min-width: 860px) {
-
-  .feature {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .feature.alt {
-    direction: rtl;
-  }
-
-  .feature.alt .feature-text {
-    direction: ltr;
-  }
-
-}
-
-/* =========================
-   Final CTA
-   ========================= */
-
-.final-cta {
-  text-align: center;
-}
-
-.final-cta p {
-  max-width: 700px;
-  margin: 0 auto 20px auto;
-}
