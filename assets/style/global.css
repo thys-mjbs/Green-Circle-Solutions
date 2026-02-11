@@ -413,7 +413,7 @@
   .intro-image {
     min-height: 220px;
     border-radius: 14px;
-    background-image: url("/Green-Circle-Solutions/assets/style/setcion_01.png");
+    background-image: url("/assets/style/setcion_01.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -422,7 +422,7 @@
   .about-image {
     min-height: 220px;
     border-radius: 14px;
-    background-image: url("/Green-Circle-Solutions/assets/style/about.png");
+    background-image: url("/assets/style/about.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -431,7 +431,7 @@
   .services-image {
     min-height: 220px;
     border-radius: 14px;
-    background-image: url("/Green-Circle-Solutions/assets/style/services.png");
+    background-image: url("/assets/style/services.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
