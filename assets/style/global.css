@@ -375,14 +375,11 @@
   overflow: hidden;
 }
 
-.hero-banner-image {
+.hero-banner-img {
   width: 100%;
-  min-height: 420px;
+  height: auto;
+  display: block;
   border-radius: 18px;
-  background-image: url("../style/banner.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
 }
 
 /* Slightly taller on larger screens */
