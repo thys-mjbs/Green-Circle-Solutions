@@ -365,3 +365,29 @@
       order: 3;
     }
   }
+
+/* =========================
+  Full Banner Section
+  ========================= */
+
+  .hero-banner {
+  padding: 0;
+  overflow: hidden;
+}
+
+.hero-banner-image {
+  width: 100%;
+  min-height: 420px;
+  border-radius: 18px;
+  background-image: url("/Green-Circle-Solutions/assets/style/hero-structure.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Slightly taller on larger screens */
+@media (min-width: 860px) {
+  .hero-banner-image {
+    min-height: 520px;
+  }
+}
