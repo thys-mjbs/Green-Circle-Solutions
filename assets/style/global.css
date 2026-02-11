@@ -133,7 +133,7 @@
   
   .hero-visual {
     border-radius: 16px;
-    background-image: url("/Green-Circle-Solutions/assets/style/hero-structure.png");
+    background-image: url("../style/hero-structure.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -379,7 +379,7 @@
   width: 100%;
   min-height: 420px;
   border-radius: 18px;
-  background-image: url("/Green-Circle-Solutions/assets/style/hero-structure.png");
+  background-image: url("../style/hero-structure.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
